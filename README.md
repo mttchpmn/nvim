@@ -1,10 +1,10 @@
 # Nvim for mttchpmn
 
-## Key Bindings
+# Key Bindings
 
 ### Navigation
 
 |Description|Key Binding|
 |-----------|-----------|
-Navigate between panes| Alt + h/j/k/l
-Navigate between tabs| Alt + p/n
+Navigate between panes| `Alt + h/j/k/l`
+Navigate between tabs| `Alt + p/n`
