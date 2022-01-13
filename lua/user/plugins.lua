@@ -49,6 +49,7 @@ return packer.startup(function(use)
 
   -- Color
   use "folke/tokyonight.nvim"
+  use "dracula/vim"
 
   -- Completions
   use "hrsh7th/nvim-cmp" -- The completion plugin
