@@ -38,6 +38,10 @@ set_keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 set_keymap("n", "<S-l>", ":bnext<CR>", opts)
 set_keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
+-- Navigate tabs
+set_keymap("n", "<C-p>", ":tabp<CR>", opts)
+set_keymap("n", "<C-n>", ":tabn<CR>", opts)
+
 -- Insert --
 -- Press jk / jj fast to escape
 set_keymap("i", "jk", "<ESC>", opts)
