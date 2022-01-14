@@ -38,6 +38,9 @@ set_keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 set_keymap("n", "<S-l>", ":bnext<CR>", opts)
 set_keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
+-- Close buffers
+set_keymap("n", "<leader>x", ":Bdelete<CR>", opts)
+
 -- Navigate tabs
 set_keymap("n", "<C-p>", ":tabp<CR>", opts)
 set_keymap("n", "<C-n>", ":tabn<CR>", opts)
