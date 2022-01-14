@@ -62,6 +62,7 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lua"
   use "akinsho/toggleterm.nvim"
   use "goolord/alpha-nvim"
+  use "folke/which-key.nvim"
 
   -- Snippets
   use "L3MON4D3/LuaSnip" --snippet engine
