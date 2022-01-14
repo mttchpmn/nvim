@@ -86,3 +86,10 @@ set_keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts) -- Find
 -- set_keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 set_keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
+-- Custom commands
+
+-- Toggle different terminals
+	vim.cmd([[ command! Js execute 'lua _NODE_TOGGLE()' ]])
+	vim.cmd([[ command! Py execute 'lua _PYTHON_TOGGLE()' ]])
+	vim.cmd([[ command! Lg execute 'lua _LAZYGIT_TOGGLE()' ]])
+	vim.cmd([[ command! Ht execute 'lua _HTOP_TOGGLE()' ]])
