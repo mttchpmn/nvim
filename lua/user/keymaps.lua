@@ -80,6 +80,9 @@ set_keymap("n", "<leader>x", ":Bdelete<CR>", opts) -- eXit
 -- Format file
 set_keymap("n", "<leader>p", ":Format<CR>", opts) -- Prettify
 
+-- Open lazygit
+set_keymap("n", "<leader>g", ":lua _LAZYGIT_TOGGLE()<CR>", opts) -- Prettify
+
 -- Telescope --
 -- TODO - git branches and git status
 set_keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts) -- Find
