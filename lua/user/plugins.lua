@@ -46,6 +46,7 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used in lots of plugin
   use "windwp/nvim-autopairs" -- Auto close pairs of brackets etc
+  use "numToStr/Comment.nvim" -- Easily comment lines
 
   -- Color
   use "folke/tokyonight.nvim"
@@ -77,6 +78,8 @@ return packer.startup(function(use)
     run = ":TSUpdate",
   }
   use "p00f/nvim-ts-rainbow"
+  use "JoosepAlviste/nvim-ts-context-commentstring"
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
