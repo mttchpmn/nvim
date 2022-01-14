@@ -25,9 +25,6 @@ set_keymap("n", "<C-j>", "<C-w>j", opts)
 set_keymap("n", "<C-k>", "<C-w>k", opts)
 set_keymap("n", "<C-l>", "<C-w>l", opts)
 
--- Launch Nvim Tree
-set_keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
-
 -- Resize with arrows
 set_keymap("n", "<C-Up>", ":resize +2<CR>", opts)
 set_keymap("n", "<C-Down>", ":resize -2<CR>", opts)
@@ -35,11 +32,9 @@ set_keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 set_keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
+-- TODO - Change to n /p ?
 set_keymap("n", "<S-l>", ":bnext<CR>", opts)
 set_keymap("n", "<S-h>", ":bprevious<CR>", opts)
-
--- Close buffers
-set_keymap("n", "<leader>x", ":Bdelete<CR>", opts)
 
 -- Navigate tabs
 set_keymap("n", "<C-p>", ":tabp<CR>", opts)
@@ -76,9 +71,18 @@ set_keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 set_keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 set_keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts) 
 
+-- Launch Nvim Tree
+set_keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts) -- Explore
+
+-- Close buffers
+set_keymap("n", "<leader>x", ":Bdelete<CR>", opts) -- eXit
+
+-- Format file
+set_keymap("n", "<leader>p", ":Format<CR>", opts) -- Prettify
+
 -- Telescope --
 -- TODO - git branches and git status
-set_keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
+set_keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts) -- Find
 -- set_keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 set_keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 

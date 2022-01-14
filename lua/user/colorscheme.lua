@@ -1,5 +1,5 @@
 -- Set colorscheme
-local colorscheme = "dracula"
+local colorscheme = "tokyonight"
 
 -- Try set color scheme
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
