@@ -178,6 +178,7 @@ local mappings = {
 
   r = {
     name = "Rust",
+    l = {"<cmd>TermExec cmd=\"cargo clean && cargo clippy -- -W clippy::pedantic\"<cr>", "Cargo clippy"},
     c = {"<cmd>TermExec cmd=\"cargo check\"<cr>", "Cargo check"},
     b = {"<cmd>TermExec cmd=\"cargo build\"<cr>", "Cargo build"},
     r = {"<cmd>TermExec cmd=\"cargo run\"<cr>", "Cargo run"},
