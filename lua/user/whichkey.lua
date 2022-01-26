@@ -175,6 +175,13 @@ local mappings = {
 		b = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
 		s = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
 	},
+
+  r = {
+    name = "Rust",
+    c = {"<cmd>TermExec cmd=\"cargo check\"<cr>", "Cargo check"},
+    b = {"<cmd>TermExec cmd=\"cargo build\"<cr>", "Cargo build"},
+    r = {"<cmd>TermExec cmd=\"cargo run\"<cr>", "Cargo run"},
+  }
 }
 
 local vopts = {
